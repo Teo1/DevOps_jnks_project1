@@ -25,7 +25,7 @@ pipeline {
         }
         stage("Build docker image"){
             steps{
-                sh "docker build -t nchisacov/petclinic:$env.BUILD_NUMBER ."
+                sh "docker build -t teog1/devops_dh_project1:$env.BUILD_NUMBER ."
             }
         }
         stage("Publish docker image"){
